@@ -11,6 +11,9 @@ const Tenor = require("tenorjs").client({
 // App Setup
 const app = express();
 
+// Allows us to use content from Public file
+app.use(express.static('public'));
+
 // Middleware
 const exphbs  = require('express-handlebars');
 
